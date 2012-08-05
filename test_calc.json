@@ -1,0 +1,33 @@
+var calc_specs = {
+	"ID": "test",
+	"layout": "horizontal",
+	"section": [ 
+		{
+			"title": "Enter your details",
+			"elements": [
+				{
+					"type": "label",
+					"text": "Initial Amount:",
+					"position": [0, 0]
+				},
+				{
+					"type": "slider",
+					"name": "initial_amount_slider",
+					"group": "initial_amount",
+					"range": [0, 1000000],
+					"default": 0,
+					"position": [0, 1],
+					"size": 4
+				},
+				{
+					"type": "textbox",
+					"name": "initial_amount_number",
+					"group": "initial_amount",
+					"prefix": "$",
+					"format": "numeric",
+					"position": [4, 1]
+				}
+			]
+		} 
+	]
+}

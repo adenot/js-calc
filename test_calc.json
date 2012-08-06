@@ -4,7 +4,7 @@ var calc_specs = {
 	"section": [ 
 		{
 			"title": "Enter your details",
-			"elements": [
+			"widgets": [
 				{
 					"type": "label",
 					"text": "Initial Amount:",
@@ -26,6 +26,23 @@ var calc_specs = {
 					"prefix": "$",
 					"format": "numeric",
 					"position": [4, 1]
+				},
+				{
+					"type": "radio",
+					"name": "interest_rate",
+					"position": [0, 2],
+					"layout": "horizontal",
+					"options": [
+						{
+							"text": "5%",
+							"value": "0.05",
+							"checked": 1
+						},
+						{
+							"text": "7%",
+							"value": "0.07"
+						}
+					]
 				}
 			]
 		} 
